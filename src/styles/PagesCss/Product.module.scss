@@ -1,0 +1,43 @@
+.product_Section{
+    overflow: hidden;
+    width: 100%;
+    margin: 15px 0;
+    padding: 5px 0;
+    & > article:first-of-type{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        aside {
+            width:30%;
+            flex-grow: 1;
+            margin:  .5em;
+            padding: 2px;
+            figure{
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    p{
+                        svg{
+                            bottom: 0;
+                        }
+                    }
+                }
+                img{
+                    width:100%;
+                    height: 350px;
+                }
+                p{
+                    svg
+                        {
+                            position: absolute;
+                            bottom: -100%;
+                            right: 0;   
+                            cursor: pointer;
+                            transition: all ease-in-out .2s; 
+                        }
+                    }
+            }
+        }
+    }
+}
